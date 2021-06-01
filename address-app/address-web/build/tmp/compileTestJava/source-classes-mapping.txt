@@ -1,0 +1,4 @@
+org/sam/mines/address/web/TownControllerTest.java
+ org.sam.mines.address.web.TownControllerTest
+org/sam/mines/address/web/config/WebTestConfig.java
+ org.sam.mines.address.web.config.WebTestConfig

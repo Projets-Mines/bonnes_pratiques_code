@@ -1,0 +1,7 @@
+org/sam/mines/address/model/Target.java
+ org.sam.mines.address.model.Target
+org/sam/mines/address/model/Address.java
+ org.sam.mines.address.model.Address
+org/sam/mines/address/model/Town.java
+ org.sam.mines.address.model.Town
+ org.sam.mines.address.model.Town$TownBuilder

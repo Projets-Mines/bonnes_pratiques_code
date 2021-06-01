@@ -1,0 +1,7 @@
+org/sam/mines/address/persistence/config/CustomHsqlDialect.java
+ org.sam.mines.address.persistence.config.CustomHsqlDialect
+ org.sam.mines.address.persistence.config.CustomHsqlDialect$1
+org/sam/mines/address/persistence/TownRepositoryTest.java
+ org.sam.mines.address.persistence.TownRepositoryTest
+org/sam/mines/address/persistence/config/PersistenceTestConfig.java
+ org.sam.mines.address.persistence.config.PersistenceTestConfig

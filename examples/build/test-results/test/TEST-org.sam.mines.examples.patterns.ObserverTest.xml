@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.sam.mines.examples.patterns.ObserverTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-31T13:30:10" hostname="LAPTOP-1SMIEUPR" time="0.005">
+  <properties/>
+  <testcase name="shouldObserve()" classname="org.sam.mines.examples.patterns.ObserverTest" time="0.005"/>
+  <system-out><![CDATA[Do something useful
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,87 @@
+org/sam/mines/examples/OptionalExample.java
+ org.sam.mines.examples.OptionalExample
+org/sam/mines/examples/patterns/VisitorTest.java
+ org.sam.mines.examples.patterns.ConcreteListVisitor
+ org.sam.mines.examples.patterns.ConcreteVisitor1
+ org.sam.mines.examples.patterns.ConcreteVisitor2
+ org.sam.mines.examples.patterns.VisitedElement
+ org.sam.mines.examples.patterns.Visitor
+ org.sam.mines.examples.patterns.VisitorTest
+ org.sam.mines.examples.patterns.VisitorTest$1
+org/sam/mines/examples/patterns/FactoryTest.java
+ org.sam.mines.examples.patterns.ColorFactory
+ org.sam.mines.examples.patterns.ConcreteColorColorFactory
+ org.sam.mines.examples.patterns.FactoryTest
+org/sam/mines/examples/patterns/model/Shape.java
+ org.sam.mines.examples.patterns.model.Shape
+org/sam/mines/examples/patterns/BuilderTest.java
+ org.sam.mines.examples.patterns.BuilderTest
+ org.sam.mines.examples.patterns.User
+ org.sam.mines.examples.patterns.User$UserBuilder
+org/sam/mines/examples/patterns/ObserverTest.java
+ org.sam.mines.examples.patterns.ObserverTest
+ org.sam.mines.examples.patterns.Publisher
+ org.sam.mines.examples.patterns.Subscriber
+org/sam/mines/examples/patterns/BridgeTest.java
+ org.sam.mines.examples.patterns.AbstractBridgeClient
+ org.sam.mines.examples.patterns.BridgeTest
+ org.sam.mines.examples.patterns.ConcreteBridgeClient
+org/sam/mines/examples/patterns/AbstractFactoryTest.java
+ org.sam.mines.examples.patterns.AbstractFactory
+ org.sam.mines.examples.patterns.AbstractFactoryTest
+ org.sam.mines.examples.patterns.ConcreteColorFactory
+ org.sam.mines.examples.patterns.ConcreteShapeFactory
+ org.sam.mines.examples.patterns.FactoryProvider
+org/sam/mines/examples/patterns/StrategyPattern.java
+ org.sam.mines.examples.patterns.ChangeColor
+ org.sam.mines.examples.patterns.ChangeColorStrategy
+ org.sam.mines.examples.patterns.StrategyPattern
+org/sam/mines/examples/patterns/ChainOfResponsibilityTest.java
+ org.sam.mines.examples.patterns.ChainOfResponsibilityTest
+ org.sam.mines.examples.patterns.RequestHandler
+org/sam/mines/examples/ImmutableClassExample.java
+ org.sam.mines.examples.ImmutableClassExample
+org/sam/mines/examples/EqualsHashCodeExample.java
+ org.sam.mines.examples.EqualsHashCodeExample
+ org.sam.mines.examples.EqualsHashCodeExample$SimpleInterface
+ org.sam.mines.examples.EqualsHashCodeExample$SimpleObject
+ org.sam.mines.examples.EqualsHashCodeExample$SimpleObjectWithOnlyEquals
+ org.sam.mines.examples.EqualsHashCodeExample$SimpleObjectWithOnlyHashCode
+ org.sam.mines.examples.EqualsHashCodeExample$SimpleObjectWithoutEqualsHashcode
+org/sam/mines/examples/patterns/AdapterTest.java
+ org.sam.mines.examples.patterns.AdapterTest
+ org.sam.mines.examples.patterns.ShapeAdapter
+org/sam/mines/examples/patterns/SingletonTest.java
+ org.sam.mines.examples.patterns.Singleton
+ org.sam.mines.examples.patterns.SingletonTest
+org/sam/mines/examples/JitExample.java
+ org.sam.mines.examples.JitExample
+org/sam/mines/examples/patterns/DecoratorTest.java
+ org.sam.mines.examples.patterns.DecoratorTest
+ org.sam.mines.examples.patterns.NiceShape
+ org.sam.mines.examples.patterns.NiceShapeDecorator
+org/sam/mines/examples/ThreadSafety.java
+ org.sam.mines.examples.ThreadSafety
+ org.sam.mines.examples.ThreadSafety$UnsafeThreadClass
+org/sam/mines/examples/patterns/PrototypeTest.java
+ org.sam.mines.examples.patterns.PrototypeTest
+ org.sam.mines.examples.patterns.PrototypedShape
+org/sam/mines/examples/ExceptionExample.java
+ org.sam.mines.examples.CheckedException
+ org.sam.mines.examples.ExceptionExample
+ org.sam.mines.examples.UncheckedException
+org/sam/mines/examples/patterns/TemplateTest.java
+ org.sam.mines.examples.patterns.AbstractTemplate
+ org.sam.mines.examples.patterns.ConcreteTemplate
+ org.sam.mines.examples.patterns.TemplateTest
+org/sam/mines/examples/patterns/FacadeTest.java
+ org.sam.mines.examples.patterns.Facade
+ org.sam.mines.examples.patterns.FacadeImpl
+ org.sam.mines.examples.patterns.FacadeTest
+org/sam/mines/examples/IterationExit.java
+ org.sam.mines.examples.IterationExit
+org/sam/mines/examples/patterns/model/Color.java
+ org.sam.mines.examples.patterns.model.Color
+org/sam/mines/examples/patterns/CompositeTest.java
+ org.sam.mines.examples.patterns.CompositeTest
+ org.sam.mines.examples.patterns.ShapeComposite

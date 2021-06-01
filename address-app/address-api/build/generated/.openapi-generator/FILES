@@ -1,0 +1,6 @@
+.openapi-generator-ignore
+README.md
+pom.xml
+src/main/java/org/sam/mines/address/api/controller/ApiUtil.java
+src/main/java/org/sam/mines/address/api/controller/TownApi.java
+src/main/java/org/sam/mines/address/api/model/Town.java
