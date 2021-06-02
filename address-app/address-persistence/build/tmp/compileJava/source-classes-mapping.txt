@@ -1,2 +1,4 @@
 org/sam/mines/address/persistence/TownRepository.java
  org.sam.mines.address.persistence.TownRepository
+org/sam/mines/address/persistence/PersonRepository.java
+ org.sam.mines.address.persistence.PersonRepository

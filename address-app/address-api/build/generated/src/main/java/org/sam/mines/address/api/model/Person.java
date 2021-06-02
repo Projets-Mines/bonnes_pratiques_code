@@ -10,20 +10,26 @@ import javax.validation.Valid;
 import javax.validation.constraints.*;
 
 /**
- * Town
+ * Person
  */
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-06-02T16:45:26.041616500+02:00[Europe/Paris]")
-public class Town   {
+public class Person   {
   @JsonProperty("id")
   private String id;
 
   @JsonProperty("name")
   private String name;
 
-  @JsonProperty("postCode")
-  private String postCode;
+  @JsonProperty("weight")
+  private Integer weight = null;
 
-  public Town id(String id) {
+  @JsonProperty("size")
+  private Integer size = null;
+
+  @JsonProperty("type")
+  private String type;
+
+  public Person id(String id) {
     this.id = id;
     return this;
   }
@@ -43,7 +49,7 @@ public class Town   {
     this.id = id;
   }
 
-  public Town name(String name) {
+  public Person name(String name) {
     this.name = name;
     return this;
   }
@@ -64,25 +70,66 @@ public class Town   {
     this.name = name;
   }
 
-  public Town postCode(String postCode) {
-    this.postCode = postCode;
+  public Person weight(Integer weight) {
+    this.weight = weight;
     return this;
   }
 
   /**
-   * Get postCode
-   * @return postCode
+   * Get weight
+   * @return weight
   */
   @ApiModelProperty(required = true, value = "")
   @NotNull
 
 
-  public String getPostCode() {
-    return postCode;
+  public Integer getWeight() {
+    return weight;
   }
 
-  public void setPostCode(String postCode) {
-    this.postCode = postCode;
+  public void setWeight(Integer weight) {
+    this.weight = weight;
+  }
+
+  public Person size(Integer size) {
+    this.size = size;
+    return this;
+  }
+
+  /**
+   * Get size
+   * @return size
+  */
+  @ApiModelProperty(required = true, value = "")
+  @NotNull
+
+
+  public Integer getSize() {
+    return size;
+  }
+
+  public void setSize(Integer size) {
+    this.size = size;
+  }
+
+  public Person type(String type) {
+    this.type = type;
+    return this;
+  }
+
+  /**
+   * Get type
+   * @return type
+  */
+  @ApiModelProperty(value = "")
+
+
+  public String getType() {
+    return type;
+  }
+
+  public void setType(String type) {
+    this.type = type;
   }
 
 
@@ -94,25 +141,29 @@ public class Town   {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    Town town = (Town) o;
-    return Objects.equals(this.id, town.id) &&
-        Objects.equals(this.name, town.name) &&
-        Objects.equals(this.postCode, town.postCode);
+    Person person = (Person) o;
+    return Objects.equals(this.id, person.id) &&
+        Objects.equals(this.name, person.name) &&
+        Objects.equals(this.weight, person.weight) &&
+        Objects.equals(this.size, person.size) &&
+        Objects.equals(this.type, person.type);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, name, postCode);
+    return Objects.hash(id, name, weight, size, type);
   }
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class Town {\n");
+    sb.append("class Person {\n");
     
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    name: ").append(toIndentedString(name)).append("\n");
-    sb.append("    postCode: ").append(toIndentedString(postCode)).append("\n");
+    sb.append("    weight: ").append(toIndentedString(weight)).append("\n");
+    sb.append("    size: ").append(toIndentedString(size)).append("\n");
+    sb.append("    type: ").append(toIndentedString(type)).append("\n");
     sb.append("}");
     return sb.toString();
   }

@@ -5,3 +5,6 @@ org/sam/mines/address/model/Address.java
 org/sam/mines/address/model/Town.java
  org.sam.mines.address.model.Town
  org.sam.mines.address.model.Town$TownBuilder
+org/sam/mines/address/model/Person.java
+ org.sam.mines.address.model.Person
+ org.sam.mines.address.model.Person$PersonBuilder
