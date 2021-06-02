@@ -72,11 +72,18 @@ public class Person {
         return type;
     }
 
-    public void setType(String t) {
-        this.type = t;
+    public void setType() {
+
+        if(this.weight<85){
+            this.type = "fin";
+        }else{
+            this.type="gros";
+        }
     }
 
-
+    public String getType(){
+        return this.type;
+    }
 
     /*public void setName(String name) {
         this.name = name;

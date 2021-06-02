@@ -1,2 +1,4 @@
+org/sam/mines/address/service/impl/PersonServiceImplTest.java
+ org.sam.mines.address.service.impl.PersonServiceImplTest
 org/sam/mines/address/service/impl/TownServiceImplTest.java
  org.sam.mines.address.service.impl.TownServiceImplTest

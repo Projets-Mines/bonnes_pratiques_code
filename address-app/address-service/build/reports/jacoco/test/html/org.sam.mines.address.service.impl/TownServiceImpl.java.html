@@ -16,13 +16,13 @@ public class TownServiceImpl implements TownService {
     private TownRepository townRepository;
 
     @Autowired
-<span class="fc" id="L19">    public TownServiceImpl(TownRepository townRepository) {</span>
-<span class="fc" id="L20">        this.townRepository = townRepository;</span>
-<span class="fc" id="L21">    }</span>
+<span class="nc" id="L19">    public TownServiceImpl(TownRepository townRepository) {</span>
+<span class="nc" id="L20">        this.townRepository = townRepository;</span>
+<span class="nc" id="L21">    }</span>
 
     @Override
     public List&lt;Town&gt; getAll() {
-<span class="fc" id="L25">        return townRepository.findAll();</span>
+<span class="nc" id="L25">        return townRepository.findAll();</span>
     }
 
     @Override
@@ -32,11 +32,11 @@ public class TownServiceImpl implements TownService {
 
     @Override
     public Town save(Town town) {
-<span class="pc bpc" id="L35" title="1 of 4 branches missed.">        if (town.getName() == null || town.getName().isBlank()){</span>
-<span class="fc" id="L36">            throw new IllegalArgumentException(&quot;Name is required&quot;);</span>
+<span class="nc bnc" id="L35" title="All 4 branches missed.">        if (town.getName() == null || town.getName().isBlank()){</span>
+<span class="nc" id="L36">            throw new IllegalArgumentException(&quot;Name is required&quot;);</span>
         }
 
-<span class="fc" id="L39">        return townRepository.save(town);</span>
+<span class="nc" id="L39">        return townRepository.save(town);</span>
     }
 
     @Override

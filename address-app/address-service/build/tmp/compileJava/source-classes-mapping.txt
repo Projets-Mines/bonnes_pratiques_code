@@ -2,3 +2,7 @@ org/sam/mines/address/service/impl/TownServiceImpl.java
  org.sam.mines.address.service.impl.TownServiceImpl
 org/sam/mines/address/service/TownService.java
  org.sam.mines.address.service.TownService
+org/sam/mines/address/service/impl/PersonServiceImpl.java
+ org.sam.mines.address.service.impl.PersonServiceImpl
+org/sam/mines/address/service/PersonService.java
+ org.sam.mines.address.service.PersonService

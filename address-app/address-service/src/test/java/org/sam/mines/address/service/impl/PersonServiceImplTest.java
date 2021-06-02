@@ -6,8 +6,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.sam.mines.address.model.Person;
-import org.sam.mines.address.persistence.TownRepository;
-import org.sam.mines.address.service.TownService;
+import org.sam.mines.address.persistence.PersonRepository;
+import org.sam.mines.address.service.PersonService;
 
 import java.util.List;
 import java.util.UUID;
@@ -18,50 +18,53 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class PersonerviceImplTest {
+class PersonServiceImplTest {
 
     @Mock
-    private TownRepository townRepository;
+    private PersonRepository personRepository;
 
     @InjectMocks
-    private TownService townService = new TownServiceImpl(townRepository);
+    private PersonService personService = new PersonServiceImpl(personRepository);
 
     @Test
     void shouldNotSaveWhenNameIsBlank() {
         // GIVEN
-        Town town = Town.TownBuilder.aTown().build();
+        Person person = Person.PersonBuilder.aPerson().build();
         // WHEN
         // THEN
-        assertThrows(IllegalArgumentException.class, () -> townService.save(town));
+        assertThrows(IllegalArgumentException.class, () -> personService.save(person));
     }
 
     @Test
-    void shouldSaveAValidTown() {
+    void shouldSaveAValidPerson() {
         // GIVEN
-        Town town = Town.TownBuilder.aTown().withName("a town").build();
+        Person person = Person.PersonBuilder.aPerson().withName("Jean-Jacques").build();
 
         // WHEN
         UUID generatedId = UUID.randomUUID();
-        when(townRepository.save(any(Town.class)))
-                .thenReturn(Town.TownBuilder.aTown().withId(generatedId).build());
+        when(personRepository.save(any(Person.class)))
+                .thenReturn(Person.PersonBuilder.aPerson().withId(generatedId).build());
 
         // THEN
-        Town persisted = townService.save(town);
+        Person persisted = personService.save(person);
         assertEquals(persisted.getId(), generatedId);
     }
 
     @Test
     void shouldGetAll() {
         // GIVEN
-        when(townRepository.findAll()).thenReturn(List.of(
-                Town.TownBuilder.aTown().withName("town 1").withId(UUID.randomUUID()).build(),
-                Town.TownBuilder.aTown().withName("town 2").withId(UUID.randomUUID()).build()
+        when(personRepository.findAll()).thenReturn(List.of(
+                Person.PersonBuilder.aPerson().withName("person 1").withId(UUID.randomUUID()).build(),
+                Person.PersonBuilder.aPerson().withName("person 2").withId(UUID.randomUUID()).build()
         ));
 
         // WHEN
-        List<Town> all = townService.getAll();
+        List<Person> all = personService.getAll();
 
         // THEN
         assertEquals(2, all.size());
     }
+
+
+
 }
