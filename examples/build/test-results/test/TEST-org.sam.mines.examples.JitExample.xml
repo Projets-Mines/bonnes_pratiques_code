@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.sam.mines.examples.JitExample" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-05-31T13:30:10" hostname="LAPTOP-1SMIEUPR" time="0.167">
+<testsuite name="org.sam.mines.examples.JitExample" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-06-02T14:45:18" hostname="DESKTOP-VFBGE6L" time="0.089">
   <properties/>
-  <testcase name="shortMethodTest()" classname="org.sam.mines.examples.JitExample" time="0.119"/>
-  <testcase name="longMethodTest()" classname="org.sam.mines.examples.JitExample" time="0.046"/>
+  <testcase name="shortMethodTest()" classname="org.sam.mines.examples.JitExample" time="0.045"/>
+  <testcase name="longMethodTest()" classname="org.sam.mines.examples.JitExample" time="0.043"/>
   <system-out><![CDATA[1000000
 1000000
 ]]></system-out>

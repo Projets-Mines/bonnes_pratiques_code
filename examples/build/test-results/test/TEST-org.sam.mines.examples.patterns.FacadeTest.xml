@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.sam.mines.examples.patterns.FacadeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-31T13:30:10" hostname="LAPTOP-1SMIEUPR" time="0.009">
+<testsuite name="org.sam.mines.examples.patterns.FacadeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-02T14:45:18" hostname="DESKTOP-VFBGE6L" time="0.007">
   <properties/>
-  <testcase name="shouldProvideFacade()" classname="org.sam.mines.examples.patterns.FacadeTest" time="0.009"/>
+  <testcase name="shouldProvideFacade()" classname="org.sam.mines.examples.patterns.FacadeTest" time="0.007"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

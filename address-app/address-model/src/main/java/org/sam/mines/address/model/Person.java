@@ -7,6 +7,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import java.util.Random;
 import java.util.Set;
 import java.util.UUID;
 
@@ -81,9 +82,7 @@ public class Person {
         }
     }
 
-    public String getType(){
-        return this.type;
-    }
+
 
     /*public void setName(String name) {
         this.name = name;
@@ -96,6 +95,77 @@ public class Person {
     public void setAddresses(Set<Address> addresses) {
         this.addresses = addresses;
     }*/
+
+    public Double getBMI(double height, double weight){
+        double BMI = weight / (height * height);
+
+        return BMI;
+    }
+
+    public String getCategory(double BMI){
+
+        if (BMI <= 18.5){
+            return "Thiness";
+        }
+        else {
+            if (BMI <= 25){
+                return "Normal";
+            }
+            else{
+                if (BMI <= 30){
+                    return "Overweight";
+                }
+                else{
+                    return "Obese";
+                }
+            }
+        }
+
+    }
+
+    public String getOrigin(String type){
+
+        if (type == "black"){
+            return "Africa";
+        }
+        else if (type == "white"){
+            Random rand = new Random(); //instance of random class
+            int upperbound = 12;
+            //generate random values from 0-24
+            int int_random = rand.nextInt(upperbound);
+
+            if (int_random <= 5){
+                return "Europe";
+            } else {
+                return "America";
+            }
+        }
+        else if (type == "yellow"){
+            return "Asia";
+        }
+        else {
+            return "South America";
+        }
+    }
+
+    public String getSexe(String name){
+
+        if (name.startsWith("A")){
+            return "F";
+        }
+        else {
+            return "M";
+        }
+    }
+
+    public Boolean IsPregnant(String category){
+
+        if (category == "Thiness"){
+            return false;
+        } else{
+            return true;
+        }
+    }
 
 
     public static final class PersonBuilder {
@@ -138,7 +208,7 @@ public class Person {
             p.setName(name);
             p.setSize(size);
             p.setWeight(weight);
-            p.setType(type);
+            //p.setType(type);
             return p;
         }
     }

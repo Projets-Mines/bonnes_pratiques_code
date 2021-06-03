@@ -4,3 +4,5 @@ org/sam/mines/address/api/controller/ApiUtil.java
  org.sam.mines.address.api.controller.ApiUtil
 org/sam/mines/address/api/controller/TownApi.java
  org.sam.mines.address.api.controller.TownApi
+org/sam/mines/address/api/model/Person.java
+ org.sam.mines.address.api.model.Person
